@@ -25,3 +25,17 @@ cache:
   yarn: true
   directories:
     - node_modules
+
+env:
+  - CI=true
+
+before_deploy:
+ - npm install netlify-cli -g
+ - npm run build
+
+deploy:
+ provider: script
+ script: netlify deploy -s f207d25a-9e2b-428f-b799-c0212528d788 -t 82decdc4d875fa61b2febab5cbb094daceb32956d8e74ed5d27bc33759ca7060 -p ./build
+ skip_cleanup: true
+ on:
+   branch: master
