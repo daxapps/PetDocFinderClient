@@ -15,7 +15,7 @@ describe('<P />', () => {
   it('should render its text', () => {
     const children = 'Text';
     const renderedComponent = shallow(
-      <H2>{children}</H2>
+      <P>{children}</P>
     );
     expect(renderedComponent.contains(children)).toBe(true);
   });

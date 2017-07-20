@@ -30,7 +30,6 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
         <A href="https://twitter.com/mxstbr">
           <Img src={Banner} alt="cute puppies and kittens" />
         </A>
-        
       </div>
     );
   }

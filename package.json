@@ -1,16 +1,16 @@
 {
-  "name": "react-boilerplate",
-  "version": "3.4.0",
-  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
+  "name": "pet-doc-finder-client",
+  "version": "1.1.0",
+  "description": "Pet Doc Finder will help pet owners find the best veterinarian by looking at reviews and prices.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": "git://github.com/daxapps/PetDocFinderClient.git"
   },
   "engines": {
     "npm": ">=3",
     "node": ">=5"
   },
-  "author": "Max Stoiber",
+  "author": "Jason Crawford",
   "license": "MIT",
   "scripts": {
     "analyze:clean": "rimraf stats.json",
