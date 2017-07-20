@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const H1 = styled.h1`
-  font-size: 2em;
+  font-size: 4em;
   margin-bottom: 0.25em;
 `;
 

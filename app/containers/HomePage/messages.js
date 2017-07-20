@@ -7,16 +7,24 @@ import { defineMessages } from 'react-intl';
 
 export default defineMessages({
   startProjectHeader: {
-    id: 'boilerplate.containers.HomePage.start_project.header',
-    defaultMessage: 'Start your next react project in seconds',
+    id: 'containers.HomePage.start_project.header',
+    defaultMessage: 'PET DOC FINDER',
   },
   startProjectMessage: {
-    id: 'boilerplate.containers.HomePage.start_project.message',
-    defaultMessage: 'A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices',
+    id: 'containers.HomePage.start_project.message',
+    defaultMessage: 'Find the best veterinarian for your loved one',
+  },
+  makedecisionHeader: {
+    id: 'containers.HomePage.makedecision.header',
+    defaultMessage: 'Make an Informed Decision',
+  },
+  makedecisionMessage: {
+    id: 'containers.HomePage.makedecision.message',
+    defaultMessage: 'Pet Doc Finder shows you veterinians located around you or around a location of your choice. Compare reviews and prices, so that you can choose which one will be the best to take care of your loved one.',
   },
   trymeHeader: {
-    id: 'boilerplate.containers.HomePage.tryme.header',
-    defaultMessage: 'Try me!',
+    id: 'containers.HomePage.tryme.header',
+    defaultMessage: 'Find Your Pet Doc Today',
   },
   trymeMessage: {
     id: 'boilerplate.containers.HomePage.tryme.message',

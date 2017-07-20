@@ -2,6 +2,7 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import A from './A';
+
 import Img from './Img';
 import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
@@ -12,9 +13,6 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
   render() {
     return (
       <div>
-        <A href="https://twitter.com/mxstbr">
-          <Img src={Banner} alt="react-boilerplate - Logo" />
-        </A>
         <NavBar>
           <HeaderLink to="/">
             <FormattedMessage {...messages.home} />
@@ -22,7 +20,17 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
           <HeaderLink to="/features">
             <FormattedMessage {...messages.features} />
           </HeaderLink>
+          <HeaderLink to="/signin">
+            <FormattedMessage {...messages.signin} />
+          </HeaderLink>
+          <HeaderLink to="/logout">
+            <FormattedMessage {...messages.logout} />
+          </HeaderLink>
         </NavBar>
+        <A href="https://twitter.com/mxstbr">
+          <Img src={Banner} alt="cute puppies and kittens" />
+        </A>
+        
       </div>
     );
   }

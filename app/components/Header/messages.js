@@ -14,4 +14,13 @@ export default defineMessages({
     id: 'boilerplate.components.Header.features',
     defaultMessage: 'Features',
   },
+  signin: {
+    id: 'boilerplate.components.Header.signin',
+    defaultMessage: 'SignIn',
+  },
+  logout: {
+    id: 'boilerplate.components.Header.logout',
+    defaultMessage: 'Logout',
+  },
+  
 });

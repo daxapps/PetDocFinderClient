@@ -11,7 +11,10 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import { makeSelectRepos, makeSelectLoading, makeSelectError } from 'containers/App/selectors';
+import H1 from 'components/H1';
 import H2 from 'components/H2';
+import H3 from 'components/H3';
+import P from 'components/P';
 import ReposList from 'components/ReposList';
 import AtPrefix from './AtPrefix';
 import CenteredSection from './CenteredSection';
@@ -51,14 +54,22 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
         />
         <div>
           <CenteredSection>
-            <H2>
+            <H1>
               <FormattedMessage {...messages.startProjectHeader} />
-            </H2>
-            <p>
+            </H1>
+            <H2>
               <FormattedMessage {...messages.startProjectMessage} />
-            </p>
+            </H2>
           </CenteredSection>
-          <Section>
+          <CenteredSection>
+            <H2>
+              <FormattedMessage {...messages.makedecisionHeader} />
+            </H2>
+            <P>
+              <FormattedMessage {...messages.makedecisionMessage} />
+            </P>
+          </CenteredSection>
+          <CenteredSection>
             <H2>
               <FormattedMessage {...messages.trymeHeader} />
             </H2>
@@ -78,7 +89,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
               </label>
             </Form>
             <ReposList {...reposListProps} />
-          </Section>
+          </CenteredSection>
         </div>
       </article>
     );
