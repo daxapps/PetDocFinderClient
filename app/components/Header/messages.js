@@ -22,4 +22,12 @@ export default defineMessages({
     id: 'boilerplate.components.Header.logout',
     defaultMessage: 'Logout',
   },
+  startProjectHeader: {
+    id: 'containers.HomePage.start_project.header',
+    defaultMessage: 'PET DOC FINDER',
+  },
+  startProjectMessage: {
+    id: 'containers.HomePage.start_project.message',
+    defaultMessage: 'Find the best veterinarian for your loved one',
+  },
 });

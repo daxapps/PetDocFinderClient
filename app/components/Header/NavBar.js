@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export default styled.div`
   
-  // border: 2px solid lightgray;
-
+  display:-webkit-flex;
+  display:flex;
+  justify-content: flex-end;
+  background-color: lightgray;
 `;

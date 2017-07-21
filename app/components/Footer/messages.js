@@ -11,9 +11,9 @@ export default defineMessages({
     defaultMessage: 'This project is licensed under the MIT license.',
   },
   authorMessage: {
-    id: 'boilerplate.components.Footer.author.message',
+    id: 'components.Footer.author.message',
     defaultMessage: `
-      Made with love by {author}.
+      Created by {author}
     `,
   },
 });

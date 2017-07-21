@@ -9,18 +9,15 @@ import Helmet from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-
 import { makeSelectRepos, makeSelectLoading, makeSelectError } from 'containers/App/selectors';
-import H1 from 'components/H1';
 import H2 from 'components/H2';
-// import H3 from 'components/H3';
+import H3 from 'components/H3';
 import P from 'components/P';
 import ReposList from 'components/ReposList';
-import AtPrefix from './AtPrefix';
 import CenteredSection from './CenteredSection';
 import Form from './Form';
 import Input from './Input';
-// import Section from './Section';
+import Section from './Section';
 import messages from './messages';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
@@ -53,43 +50,65 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
           ]}
         />
         <div>
-          <CenteredSection>
-            <H1>
-              <FormattedMessage {...messages.startProjectHeader} />
-            </H1>
-            <H2>
-              <FormattedMessage {...messages.startProjectMessage} />
-            </H2>
-          </CenteredSection>
-          <CenteredSection>
-            <H2>
-              <FormattedMessage {...messages.makedecisionHeader} />
-            </H2>
-            <P>
-              <FormattedMessage {...messages.makedecisionMessage} />
-            </P>
-          </CenteredSection>
-          <CenteredSection>
-            <H2>
-              <FormattedMessage {...messages.trymeHeader} />
-            </H2>
-            <Form onSubmit={this.props.onSubmitForm}>
-              <label htmlFor="username">
-                <FormattedMessage {...messages.trymeMessage} />
-                <AtPrefix>
-                  <FormattedMessage {...messages.trymeAtPrefix} />
-                </AtPrefix>
-                <Input
-                  id="username"
-                  type="text"
-                  placeholder="mxstbr"
-                  value={this.props.username}
-                  onChange={this.props.onChangeUsername}
-                />
-              </label>
-            </Form>
-            <ReposList {...reposListProps} />
-          </CenteredSection>
+          <Section>
+            <CenteredSection>
+              <H2>
+                <FormattedMessage {...messages.makedecisionHeader} />
+              </H2>
+              <P>
+                <FormattedMessage {...messages.makedecisionMessage} />
+              </P>
+            </CenteredSection>
+            <CenteredSection>
+              <H2>
+                <FormattedMessage {...messages.helpothersHeader} />
+              </H2>
+              <P>
+                <FormattedMessage {...messages.helpothersMessage} />
+              </P>
+            </CenteredSection>
+
+            <CenteredSection>
+              <H2>
+                <FormattedMessage {...messages.trymeHeader} />
+              </H2>
+              <Form onSubmit={this.props.onSubmitForm}>
+                <label htmlFor="username">
+                  <H3>
+                    <FormattedMessage {...messages.usernameMessage} />
+                    <Input
+                      id="username"
+                      type="text"
+                      // placeholder="mxstbr"
+                      // value={this.props.username}
+                      // onChange={this.props.onChangeUsername}
+                    />
+                  </H3>
+                  <H3>
+                    <FormattedMessage {...messages.emailMessage} />
+                    <Input
+                      id="email"
+                      type="text"
+                      // placeholder="mxstbr"
+                      // value={this.props.email}
+                      // onChange={this.props.onChangeEmail}
+                    />
+                  </H3>
+                  <H3>
+                    <FormattedMessage {...messages.passwordMessage} />
+                    <Input
+                      id="password"
+                      type="text"
+                    // placeholder="mxstbr"
+                    // value={this.props.password}
+                    // onChange={this.props.onChangePassword}
+                    />
+                  </H3>
+                </label>
+              </Form>
+              <ReposList {...reposListProps} />
+            </CenteredSection>
+          </Section>
         </div>
       </article>
     );
@@ -108,7 +127,7 @@ HomePage.propTypes = {
   ]),
   onSubmitForm: React.PropTypes.func,
   username: React.PropTypes.string,
-  onChangeUsername: React.PropTypes.func,
+  // onChangeUsername: React.PropTypes.func,
 };
 
 export function mapDispatchToProps(dispatch) {

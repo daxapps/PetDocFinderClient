@@ -6,14 +6,6 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  startProjectHeader: {
-    id: 'containers.HomePage.start_project.header',
-    defaultMessage: 'PET DOC FINDER',
-  },
-  startProjectMessage: {
-    id: 'containers.HomePage.start_project.message',
-    defaultMessage: 'Find the best veterinarian for your loved one',
-  },
   makedecisionHeader: {
     id: 'containers.HomePage.makedecision.header',
     defaultMessage: 'Make an Informed Decision',
@@ -22,16 +14,28 @@ export default defineMessages({
     id: 'containers.HomePage.makedecision.message',
     defaultMessage: 'Pet Doc Finder shows you veterinians located around you or around a location of your choice. Compare reviews and prices, so that you can choose which one will be the best to take care of your loved one.',
   },
+  helpothersHeader: {
+    id: 'containers.HomePage.helpothers.header',
+    defaultMessage: 'Help Others Make an Informed Decision',
+  },
+  helpothersMessage: {
+    id: 'containers.HomePage.helpothers.message',
+    defaultMessage: 'Help others who are looking for the best vet by adding the price of services from the vet that you like.',
+  },
   trymeHeader: {
     id: 'containers.HomePage.tryme.header',
     defaultMessage: 'Find Your Pet Doc Today',
   },
-  trymeMessage: {
-    id: 'boilerplate.containers.HomePage.tryme.message',
-    defaultMessage: 'Show Github repositories by',
+  usernameMessage: {
+    id: 'boilerplate.containers.HomePage.username.message',
+    defaultMessage: 'Username: ',
   },
-  trymeAtPrefix: {
-    id: 'boilerplate.containers.HomePage.tryme.atPrefix',
-    defaultMessage: '@',
+  emailMessage: {
+    id: 'boilerplate.containers.HomePage.email.message',
+    defaultMessage: 'Email: ',
+  },
+  passwordMessage: {
+    id: 'boilerplate.containers.HomePage.password.message',
+    defaultMessage: 'Password: ',
   },
 });
