@@ -22,20 +22,4 @@ export default defineMessages({
     id: 'containers.HomePage.helpothers.message',
     defaultMessage: 'Help others who are looking for the best vet by adding the price of services from the vet that you like.',
   },
-  trymeHeader: {
-    id: 'containers.HomePage.tryme.header',
-    defaultMessage: 'Find Your Pet Doc Today',
-  },
-  usernameMessage: {
-    id: 'boilerplate.containers.HomePage.username.message',
-    defaultMessage: 'Username: ',
-  },
-  emailMessage: {
-    id: 'boilerplate.containers.HomePage.email.message',
-    defaultMessage: 'Email: ',
-  },
-  passwordMessage: {
-    id: 'boilerplate.containers.HomePage.password.message',
-    defaultMessage: 'Password: ',
-  },
 });

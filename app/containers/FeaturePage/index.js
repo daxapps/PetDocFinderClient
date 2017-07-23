@@ -20,7 +20,6 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
   shouldComponentUpdate() {
     return false;
   }
-
   render() {
     return (
       <div>
@@ -42,7 +41,6 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
               <FormattedMessage {...messages.scaffoldingMessage} />
             </p>
           </ListItem>
-
           <ListItem>
             <ListItemTitle>
               <FormattedMessage {...messages.feedbackHeader} />
@@ -51,7 +49,6 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
               <FormattedMessage {...messages.feedbackMessage} />
             </p>
           </ListItem>
-
           <ListItem>
             <ListItemTitle>
               <FormattedMessage {...messages.routingHeader} />
@@ -60,7 +57,6 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
               <FormattedMessage {...messages.routingMessage} />
             </p>
           </ListItem>
-
           <ListItem>
             <ListItemTitle>
               <FormattedMessage {...messages.networkHeader} />
@@ -69,7 +65,6 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
               <FormattedMessage {...messages.networkMessage} />
             </p>
           </ListItem>
-
           <ListItem>
             <ListItemTitle>
               <FormattedMessage {...messages.intlHeader} />
