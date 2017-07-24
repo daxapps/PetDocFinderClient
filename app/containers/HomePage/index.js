@@ -67,8 +67,9 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
                 <FormattedMessage {...messages.helpothersMessage} />
               </P>
             </CenteredSection>
-
+            
             <CenteredSection>
+            <a name="register" id="register"></a>
               <H2>
                 <FormattedMessage {...messages.trymeHeader} />
               </H2>
