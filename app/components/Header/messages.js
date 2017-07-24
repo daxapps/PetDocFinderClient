@@ -14,6 +14,10 @@ export default defineMessages({
     id: 'boilerplate.components.Header.features',
     defaultMessage: 'Features',
   },
+  register: {
+    id: 'components.Header.register',
+    defaultMessage: 'Register',
+  },
   signin: {
     id: 'boilerplate.components.Header.signin',
     defaultMessage: 'SignIn',

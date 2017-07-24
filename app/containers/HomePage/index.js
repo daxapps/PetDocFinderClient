@@ -73,7 +73,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
                 <FormattedMessage {...messages.trymeHeader} />
               </H2>
               <Form onSubmit={this.props.onSubmitForm}>
-                <label htmlFor="username">
+                <label htmlFor="register">
                   <H3>
                     <FormattedMessage {...messages.usernameMessage} />
                     <Input
